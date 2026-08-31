@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contacto — SICISA</title>
+<meta name="description" content="Contacta a SICISA para cotizar cableado estructurado, redes, seguridad electrónica o salas de colaboración.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="wrap">
+    <a href="index.html" class="nav-logo"><img src="img/logo.png" alt="SICISA"></a>
+    <button class="nav-toggle" aria-label="Abrir menú" onclick="document.querySelector('.nav-links').classList.toggle('open')">☰</button>
+    <ul class="nav-links">
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="quienes-somos.html">Quiénes somos</a></li>
+      <li><a href="servicios.html">Servicios</a></li>
+      <li><a href="sectores.html">Sectores</a></li>
+      <li><a href="contacto.html" class="active">Contacto</a></li>
+    </ul>
+    <a href="contacto.html" class="nav-cta">Solicita una cotización</a>
+  </div>
+</nav>
+
+<header class="page-header">
+  <div class="arc-field" aria-hidden="true">
+    <svg width="600" height="600" viewBox="0 0 600 600" style="right:-200px; top:-160px;">
+      <g fill="none" stroke-width="24">
+        <path d="M100 500 A380 380 0 0 1 500 100" stroke="#F26522" opacity="0.35"/>
+        <path d="M160 500 A320 320 0 0 1 500 160" stroke="#ffffff" opacity="0.1"/>
+      </g>
+    </svg>
+  </div>
+  <div class="wrap">
+    <span class="breadcrumb">CONTACTO</span>
+    <h1>Conectamos tu mundo, eficientizamos tu vida</h1>
+    <p>Escríbenos sobre tu proyecto de cableado, redes, seguridad o colaboración. Un especialista te responde a la brevedad.</p>
+  </div>
+</header>
+
+<section>
+  <div class="wrap grid-2" style="align-items:start;">
+    <div>
+      <span class="kicker">ENVÍANOS UN MENSAJE</span>
+      <h2>Cuéntanos qué necesitas</h2>
+      <form class="form-grid" onsubmit="event.preventDefault(); this.querySelector('.form-status').style.display='block';">
+        <div>
+          <label for="nombre">Nombre *</label>
+          <input id="nombre" name="nombre" type="text" required>
+        </div>
+        <div>
+          <label for="empresa">Empresa</label>
+          <input id="empresa" name="empresa" type="text">
+        </div>
+        <div>
+          <label for="correo">Correo *</label>
+          <input id="correo" name="correo" type="email" required>
+        </div>
+        <div>
+          <label for="telefono">Teléfono</label>
+          <input id="telefono" name="telefono" type="tel">
+        </div>
+        <div class="full">
+          <label for="mensaje">Mensaje</label>
+          <textarea id="mensaje" name="mensaje" rows="5" placeholder="Cuéntanos sobre tu proyecto..."></textarea>
+        </div>
+        <div class="full">
+          <button type="submit" class="btn btn-primary" style="border:none; cursor:pointer;">Enviar mensaje</button>
+          <p class="form-status" style="display:none; color:var(--navy); margin-top:14px;">¡Gracias! SICISA agradece tus dudas y comentarios. Nos pondremos en contacto contigo lo antes posible.</p>
+        </div>
+      </form>
+    </div>
+
+    <div>
+      <span class="kicker">DATOS DE CONTACTO</span>
+      <div class="panel" style="margin-bottom:20px;">
+        <h3 style="font-size:17px;">Teléfono</h3>
+        <p style="margin:0;">55-55-63-96-16<br>55-53-94-89-41</p>
+      </div>
+      <div class="panel" style="margin-bottom:20px;">
+        <h3 style="font-size:17px;">Correo electrónico</h3>
+        <p style="margin:0;">ventas@sicisa.com.mx</p>
+      </div>
+      <div class="panel">
+        <h3 style="font-size:17px;">Dirección</h3>
+        <p style="margin:0;">José María Velasco No. 3<br>Cd. Satélite, 53100<br>Naucalpan de Juárez, Estado de México</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:0;">
+  <div class="wrap">
+    <span class="kicker">CÓMO LLEGAR</span>
+    <h2 style="margin-bottom:20px;">Nuestra ubicación</h2>
+    <div class="panel" style="padding:0; overflow:hidden;">
+      <iframe
+        src="https://www.google.com/maps?q=19.5107288,-99.222908&z=17&output=embed"
+        width="100%" height="420" style="border:0; display:block;"
+        allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+        title="Ubicación de SICISA — José María Velasco No. 3, Cd. Satélite, Naucalpan de Juárez">
+      </iframe>
+    </div>
+    <a href="https://maps.app.goo.gl/hbPtFR1P9eNYvGYSA"
+       target="_blank" rel="noopener" class="btn btn-ghost" style="margin-top:20px;">Abrir en Google Maps</a>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <img src="img/logo.png" alt="SICISA">
+        <p style="color:#8D90B8; max-width:36ch;">Sistema de Cableados Inteligentes S.A. de C.V. — Infraestructura de telecomunicaciones y seguridad para organizaciones que no pueden detenerse.</p>
+      </div>
+      <div>
+        <h4>Navegación</h4>
+        <ul class="foot-links">
+          <li><a href="quienes-somos.html">Quiénes somos</a></li>
+          <li><a href="servicios.html">Servicios</a></li>
+          <li><a href="sectores.html">Sectores</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contacto</h4>
+        <ul class="foot-links">
+          <li>55-55-63-96-16</li>
+          <li>55-53-94-89-41</li>
+          <li>ventas@sicisa.com.mx</li>
+          <li>José María Velasco No. 3, Cd. Satélite, 53100, Naucalpan de Juárez, Méx.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 SICISA. Todos los derechos reservados.</span>
+      <a href="#">Política de privacidad</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
